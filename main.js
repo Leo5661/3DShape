@@ -77,7 +77,8 @@ loop();
 // timeline
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline.fromTo(mesh.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
-// timeline.fromTo("nav", {y: "-100%"}, {y: "0%"});
+timeline.fromTo("nav", {y: "-100%"}, {y: "0%"});
+timeline.fromTo(".title", {opacity: 0}, {opacity: 1});
 
 // mouse animation color
 let mouseDown = false;
