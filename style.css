@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@font-face {
+  font-family: 'reospec';
+  src: url(/fonts/Reospec.otf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dune_rise';
+  src: url(/fonts/Dune_Rise.otf);
+  font-style: normal;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.webGl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  text-shadow: 2px 2px 4px #fffdfd;
+  font-family: dune_rise;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  font-family: reospec;
+  gap: 4rem;
+}
+
+.title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-family: reospec;
+  font-size: 2rem;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -75%);
+}
+
+
+
